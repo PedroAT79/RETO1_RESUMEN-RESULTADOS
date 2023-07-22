@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lightRed:hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --White:hsl(0, 0%, 100%);
+    --PaleBlue: rgb(235, 241, 255);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+
+
+}
+body{
+   font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+.father-container{
+    width: 70%;
+    max-width: 1440px;
+    background-color:var(--White);
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow:14px 12px 32px -4px rgb(224, 230, 245);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+   
+
+}
+
+.son-containter{
+    width: 50%;
+    background: linear-gradient(to right, hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+    padding: 70px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+    
+ 
+}
+.third-title{
+    text-align: center;
+    color: var(--White);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.second{
+    background: var(--White);
+}
+
+.son-container .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-score{
+    color: var(--White);
+}
+.score{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+    padding: 50px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.message{
+    margin-top: 20px;
+
+}
+
+.message p{
+    display: flex;
+    justify-content: center;
+   text-align: center;
+   color:var(--LightLavender);
+   font-size: 18px;
+   font-weight: 300;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+
+}
+
+
+.score span{
+    color: var(--LightLavender);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.first-title{
+    margin:0 auto 0;
+    color:var(--LightLavender);
+}
+
+.boton{
+    width: 100%;
+    background-color: var(--DarkGrayBlue);
+    padding: 12px 50px;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    
+       
+}
+
+.summary-item{
+border-radius: 10px;
+margin-bottom: 1rem;
+width: 100%;
+height: 2.5rem;
+display: flex;
+justify-content:space-around;
+align-items: center;
+font-weight: 700;
+font-size:18px;
+}
+.summary p{
+    color:var(--CobaltBlue);
+}
+.second h2{
+    color:var(--DarkGrayBlue);
+    text-align: left;
+    margin: 0px auto 30px;
+
+}
+
+.item1{
+    background-color:hsla(0, 100%, 67%, 0.079);
+    color:  var(--lightRed);
+}
+
+.item2{
+    background-color:hsla(39, 100%, 56%, 0.14);
+    color:  var(--OrangeyYellow);
+}
+.item3{
+    background-color:hsla(166, 100%, 37%, 0.132);
+    color: var(--GreenTeal);
+
+}
+
+.item4{
+    background-color:hsla(234, 85%, 45%, 0.116);
+    color: var(--CobaltBlue);
+
+}
+
+.summary-item span{
+    color:  hsla(224, 30%, 27%, 0.6);
+}
+
+@media only screen and (max-width: 865px){
+
+    .father-container{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .son-container{
+        width: 95%;
+    }
+
+    .first, .second{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .first-title{
+        margin-bottom: 20px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 640px){
+    
+   
+    .father-container{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow:none;
+       
+    }
+
+    .son-container{
+        width: 100%;
+        height: 50vh;
+        
+        
+    }
+
+    .first, .second{
+        width: 100%;
+        border-top-left-radius:0;
+        border-top-right-radius: 0;
+        padding-left: 70px;
+        padding-right: 70px;
+       
+    }
+
+
+    .summary-item{
+        font-weight: 500;
+        font-size:15px;
+        }
+
+
+
+
+
+ 
+
+}
+
+
+
+
